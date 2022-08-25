@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a47640cab8944f2a8dd1aa4baeb0bb98" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="SAACGModel.ARtblControlMaestroConfiguracionMontoCompra" Width="3.875" PointX="12.75" PointY="6.375" IsExpanded="true" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioAjuste" Width="2.375" PointX="17.625" PointY="6.375" IsExpanded="true" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioFisicoDetalle" Width="2.75" PointX="21.125" PointY="12" IsExpanded="true" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblProveedorProspecto" Width="2.5" PointX="29.125" PointY="6.375" IsExpanded="true" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblAlmacenProducto" Width="2.25" PointX="0.5" PointY="6.375" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_ARtblAlmacenProducto" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblControlMaestro" Width="1.875" PointX="40.625" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionMontoCompra_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionMontoCompra_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_GRtblControlMaestro" />
+        <EntityTypeShape EntityType="SAACGModel.tblCatalogoCuenta" Width="2.125" PointX="8" PointY="26.25" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoConfiguracionArea" Width="2.5" PointX="6.75" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoRequisicionMaterial" Width="2.875" PointX="9.625" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.tblProyecto" Width="1.5" PointX="8.875" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.tblProyecto_Dependencia" Width="2.625" PointX="5.875" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_tblProyecto_Dependencia_tblProyecto" />
+        <EntityTypeShape EntityType="SAACGModel.tblAlmacen" Width="1.5" PointX="11.25" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblAlmacenProducto_tblAlmacen" />
+        <EntityTypeShape EntityType="SAACGModel.tblObjetoGasto" Width="1.5" PointX="0.875" PointY="26.25" />
+        <EntityTypeShape EntityType="SAACGModel.tblRamo" Width="1.5" PointX="3" PointY="26.25" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_tblRamo" />
+        <AssociationConnector Association="SAACGModel.tblProyecto_Ramo" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoRequisicionPorSurtir" Width="2.875" PointX="12.875" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroControlPeriodo" Width="2.625" PointX="57.75" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroDimension" Width="2.625" PointX="60.625" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroDimensionNivel" Width="2.625" PointX="60.625" PointY="11" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroTipoIndicador" Width="3.125" PointX="63.875" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroTipoIndicadorNivel" Width="3.125" PointX="63.875" PointY="11" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroUnidadMedida" Width="3.5" PointX="67.625" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroUnidadMedidaDimension" Width="3.5" PointX="67.625" PointY="11" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroUnidadMedidaFormulaVariable" Width="3.5" PointX="67.625" PointY="15.125" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizConfiguracionPresupuestal" Width="3.125" PointX="71.875" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizIndicadorResultado" Width="3.875" PointX="75.75" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizIndicadorResultadoIndicadorFormulaVariable" Width="3.875" PointX="75.75" PointY="23.875" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizIndicadorResultadoIndicadorMeta" Width="3.875" PointX="75.75" PointY="28.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblPlanDesarrollo" Width="2.625" PointX="80.375" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblPlanDesarrolloEstructura" PointX="80.375" PointY="11.375" Width="2.625" FillColor="255, 192, 192" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroControlPeriodo_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimensionNivel_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicadorNivel_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestal_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorMeta_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrollo_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrollo_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrolloEstructura_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimensionNivel_MItblControlMaestroDimension" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaDimension_MItblControlMaestroDimension" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicadorNivel_MItblControlMaestroTipoIndicador" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaDimension_MItblControlMaestroUnidadMedida" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaFormulaVariable_MItblControlMaestroUnidadMedida" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestal_MItblMatrizIndicadorResultado" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_MItblPlanDesarrollo" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_MItblPlanDesarrolloEstructura" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrolloEstructura_MItblPlanDesarrollo" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrolloEstructura_MItblPlanDesarrolloEstructura" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoPlanNacionalDesarrollo" Width="2.625" PointX="58" PointY="1.5" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoMatrizConfiguracionPresupuestal" Width="3.125" PointX="61.125" PointY="1.5" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.tblProgramaGobierno" Width="2.25" PointX="5.125" PointY="26.25" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_tblProgramaGobierno" />
+        <EntityTypeShape EntityType="SAACGModel.tblProducto" Width="1.5" PointX="11" PointY="26.25" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblAlmacenProducto_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_tblProducto_tblObjetoGasto" />
+        <EntityTypeShape EntityType="SAACGModel.tblUnidadDeMedida" Width="1.875" PointX="13.375" PointY="26.25" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_tblUnidadDeMedida" />
+        <AssociationConnector Association="SAACGModel.FK_tblProducto_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblArchivo" Width="2.625" PointX="43" PointY="21" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblArchivoEstructuraCarpeta" Width="2.625" PointX="43" PointY="25.375" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblControlMaestroOrigenArchivo" Width="3" PointX="46.125" PointY="21" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblMenuPrincipal" Width="2" PointX="49.625" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblArchivo_GRtblControlMaestroOrigenArchivo" />
+        <EntityTypeShape EntityType="SAACGModel.tblCuentaPresupuestalEgr" Width="2.125" PointX="13.375" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblAlmacenProducto_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_tblCuentaPresupuestalEgr_tblObjetoGasto" />
+        <AssociationConnector Association="SAACGModel.FK_tblCuentaPresupuestalEgr_tblProyecto" />
+        <AssociationConnector Association="SAACGModel.FK_tblCuentaPresupuestalEgr_tblRamo" />
+        <EntityTypeShape EntityType="SAACGModel.tblTipoGasto" Width="1.5" PointX="3.625" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_tblTipoGasto" />
+        <AssociationConnector Association="SAACGModel.FK_tblCuentaPresupuestalEgr_tblTipoGasto" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblAutonumerico" Width="1.875" PointX="52.25" PointY="21" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.tblDependencia" Width="2.125" PointX="0.875" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_tblCuentaPresupuestalEgr_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_tblProyecto_Dependencia_tblDependencia" />
+        <EntityTypeShape EntityType="SAACGModel.RHtblEmpleado" Width="1.5" PointX="36.375" PointY="21" FillColor="192, 255, 255" />
+        <AssociationConnector Association="SAACGModel.FK_RHtblEmpleado_tblDependencia" />
+        <EntityTypeShape EntityType="SAACGModel.tblProveedor" Width="1.5" PointX="16" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblCatalogoCuenta" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizIndicadorResultadoIndicador" Width="3.875" PointX="75.75" PointY="12.125" FillColor="255, 192, 192" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblControlMaestro2" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblControlMaestro3" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblControlMaestro4" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorFormulaVariable_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_MItblControlMaestroDimension" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_MItblControlMaestroTipoIndicador" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_MItblControlMaestroUnidadMedida" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorFormulaVariable_MItblControlMaestroUnidadMedidaFormulaVariable" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_MItblMatrizIndicadorResultado" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_MItblMatrizIndicadorResultadoIndicador" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_tblProyecto" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorFormulaVariable_MItblMatrizIndicadorResultadoIndicador" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorMeta_MItblMatrizIndicadorResultadoIndicador" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizConfiguracionPresupuestalSeguimientoVariable" Width="2.75" PointX="80.375" PointY="23.875" FillColor="255, 192, 192" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalSeguimientoVariable_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalSeguimientoVariable_MItblMatrizIndicadorResultadoIndicadorFormulaVariable" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoMatrizConfiguracionPresupuestalSeguimientoVariable" Width="2.125" PointX="67.125" PointY="1.5" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroFrecuenciaMedicion" Width="2.625" PointX="83.625" PointY="6.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MItblControlMaestroFrecuenciaMedicionNivel" Width="2.5" PointX="83.75" PointY="10" FillColor="255, 192, 192" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicionNivel_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicionNivel_MItblControlMaestroFrecuenciaMedicion" />
+        <EntityTypeShape EntityType="SAACGModel.tblOrdenCompra" Width="1.5" PointX="18" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.tblOrdenCompraDet" Width="1.5" PointX="18" PointY="25.5" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompra_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompraDet_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompra_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompraDet_tblOrdenCompra" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompraDet_tblProducto" />
+        <EntityTypeShape EntityType="SAACGModel.tblTarifaImpuesto" Width="1.5" PointX="20" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompraDet_tblTarifaImpuesto" />
+        <AssociationConnector Association="SAACGModel.FK_tblProducto_tblTarifaImpuesto" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInvitacionCompra" Width="2.375" PointX="36.25" PointY="6.375" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInvitacionCompraDetalle" Width="2.375" PointX="36.25" PointY="11.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompra_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompra_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompra_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_ARInvitacionCompra" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_tblTarifaImpuesto" />
+        <EntityTypeShape EntityType="SAACGModel.tblTipoComprobanteFiscal" Width="1.5" PointX="21.875" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.tblTipoOperacion" Width="1.5" PointX="23.75" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoOrdenCompra" Width="1.5" PointX="16.125" PointY="0.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompra_tblTipoComprobanteFiscal" />
+        <AssociationConnector Association="SAACGModel.FK_tblOrdenCompra_tblTipoOperacion" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblTipoComprobanteFiscal" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblTipoOperacion" />
+        <EntityTypeShape EntityType="SAACGModel.tblCompra" Width="1.5" PointX="25.625" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.tblCompraDet" Width="1.5" PointX="25.625" PointY="26.125" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompra_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompra_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompra_tblTipoComprobanteFiscal" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompra_tblTipoOperacion" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompraDet_tblCompra" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompraDet_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompraDet_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_tblCompraDet_tblTarifaImpuesto" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblOrdenCompraRequisicionDet" Width="1.5" PointX="39.25" PointY="6.375" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblCompraCancelInfo" Width="1.5" PointX="39.25" PointY="9.125" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCompraCancelInfo_tblCompra" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioAjusteDetalle" Width="2.375" PointX="17.625" PointY="9.625" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_ARtblInventarioAjuste" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_GRtblArchivo" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblRamo" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblTipoGasto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblControlMaestroConceptoAjusteInventario" Width="4.25" PointX="3.25" PointY="6.375" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConceptoAjusteInventario_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConceptoAjusteInventario_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_ARtblControlMaestroConceptoAjusteInventario" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioMovimiento" Width="3.375" PointX="24.75" PointY="6.375" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.tblPoliza" Width="1.5" PointX="27.75" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimiento_ARtblAlmacenProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimiento_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimiento_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimiento_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.tblSubProgramaGobierno" Width="1.5" PointX="8" PointY="29.375" />
+        <AssociationConnector Association="SAACGModel.FK_tblSubProgramaGobierno_tblProgramaGobierno" />
+        <AssociationConnector Association="SAACGModel.FK_tblProyecto_tblSubProgramaGobierno" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblRol" Width="1.5" PointX="43.125" PointY="29" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblRolMenu" Width="1.5" PointX="44.875" PointY="29" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblMenuPrincipal_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRol_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRolMenu_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRolMenu_GRtblMenuPrincipal" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRolMenu_GRtblRol" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInvitacionArticulo" Width="2.125" PointX="41.5" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInvitacionArticuloDetalle" Width="2.125" PointX="41.5" PointY="10.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_tblProveedor" ManuallyRouted="true" >
+          <ConnectorPoint PointX="16.9062525" PointY="21.125" />
+          <ConnectorPoint PointX="16.9062525" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="17.291666666666668" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="17.458333333333332" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="17.5" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="17.5" PointY="6.109375" />
+          <ConnectorPoint PointX="24.401041666666668" PointY="6.1093749999999991" />
+          <ConnectorPoint PointX="24.567708333333332" PointY="6.109375" />
+          <ConnectorPoint PointX="28.541666666666668" PointY="6.1093749999999991" />
+          <ConnectorPoint PointX="28.708333333333332" PointY="6.109375" />
+          <ConnectorPoint PointX="32.229166666666664" PointY="6.109375" />
+          <ConnectorPoint PointX="32.395833333333336" PointY="7.3428049861433458" />
+          <ConnectorPoint PointX="33.926432647282212" PointY="6.1093749999999991" />
+          <ConnectorPoint PointX="34.093099313948883" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="10.470602213541667" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="5.7499999999999991" />
+          <ConnectorPoint PointX="38.90243958514354" PointY="5.7499999999999991" />
+          <ConnectorPoint PointX="38.90243958514354" PointY="5.8540884804657658" />
+          <ConnectorPoint PointX="39.04292838810909" PointY="6.0052865195342342" />
+          <ConnectorPoint PointX="39.04292838810909" PointY="6.07659326219267" />
+          <ConnectorPoint PointX="39.20707161189091" PointY="6.07659326219267" />
+          <ConnectorPoint PointX="41.19649050277966" PointY="5.8207447453630676" />
+          <ConnectorPoint PointX="41.245262314230679" PointY="6.677227046543357" />
+          <ConnectorPoint PointX="41.254737685769328" PointY="6.84362414721516" />
+          <ConnectorPoint PointX="41.288164813453065" PointY="7.4306382930639705" />
+          <ConnectorPoint PointX="41.297640184991714" PointY="7.5970353937357737" />
+          <ConnectorPoint PointX="41.311689855174315" PointY="7.8437618016918753" />
+          <ConnectorPoint PointX="41.321165226712964" PointY="8.01015890236368" />
+          <ConnectorPoint PointX="41.411249529210494" PointY="9.5921302995262234" />
+          <ConnectorPoint PointX="41.420724900749143" PointY="9.7585274001980284" />
+          <ConnectorPoint PointX="41.432762314230679" PointY="9.9699165467602082" />
+          <ConnectorPoint PointX="41.442237685769328" PointY="10.136313647432013" />
+          <ConnectorPoint PointX="41.442630329714987" PointY="10.14320887195044" />
+          <ConnectorPoint PointX="41.452105701253636" PointY="10.309605972622245" />
+          <ConnectorPoint PointX="41.493007482221955" PointY="11.027882584539931" />
+          <ConnectorPoint PointX="41.332541710465222" PointY="11.005605485486456" />
+          <ConnectorPoint PointX="41.086293058765548" PointY="10.971419343821216" />
+          <ConnectorPoint PointX="41.014644433106312" PointY="10.961472527666082" />
+          <ConnectorPoint PointX="40.850025028432157" PointY="10.961472527666082" />
+          <ConnectorPoint PointX="39.196632304330137" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="39.123714700398082" PointY="10.699905320314215" />
+          <ConnectorPoint PointX="38.6613777051282" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="38.652626950425834" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="36.462404043056971" PointY="10.402893051775591" />
+          <ConnectorPoint PointX="36.297046650639395" PointY="10.402893051775591" />
+          <ConnectorPoint PointX="35.762503352395115" PointY="10.309889805337747" />
+          <ConnectorPoint PointX="35.559445418868464" PointY="10.309889805337747" />
+          <ConnectorPoint PointX="34.093099313948883" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="5.7548977806126311" />
+          <ConnectorPoint PointX="41.222740850203635" PointY="5.7548977806126311" />
+          <ConnectorPoint PointX="41.245897304367638" PointY="6.22467780707447" />
+          <ConnectorPoint PointX="41.254102695632362" PointY="6.39114236586093" />
+          <ConnectorPoint PointX="41.433397304367645" PointY="10.028531123206307" />
+          <ConnectorPoint PointX="41.449591589523273" PointY="10.357068111428276" />
+          <ConnectorPoint PointX="41.486003068022214" PointY="11.095755702006812" />
+          <ConnectorPoint PointX="41.476031588433322" PointY="11.076633869347663" />
+          <ConnectorPoint PointX="41.3795529930076" PointY="10.891621450631314" />
+          <ConnectorPoint PointX="41.376044827943581" PointY="10.884894009162185" />
+          <ConnectorPoint PointX="41.248955172056419" PointY="10.884894009162185" />
+          <ConnectorPoint PointX="41.230289941287189" PointY="10.867799864415794" />
+          <ConnectorPoint PointX="40.751044827943581" PointY="10.428893673660298" />
+          <ConnectorPoint PointX="38.953881798145289" PointY="8.7830010863115078" />
+          <ConnectorPoint PointX="38.830971454032451" PointY="8.670436326782422" />
+          <ConnectorPoint PointX="38.806166210517958" PointY="8.6477189851996314" />
+          <ConnectorPoint PointX="38.683255866405119" PointY="8.5351542256705457" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="5.7499999999999991" />
+          <ConnectorPoint PointX="38.90243958514354" PointY="5.7499999999999991" />
+          <ConnectorPoint PointX="38.90243958514354" PointY="5.8540884804657667" />
+          <ConnectorPoint PointX="39.04292838810909" PointY="6.0052865195342342" />
+          <ConnectorPoint PointX="39.04292838810909" PointY="6.07659326219267" />
+          <ConnectorPoint PointX="39.20707161189091" PointY="6.07659326219267" />
+          <ConnectorPoint PointX="41.19649050277966" PointY="5.8207447453630676" />
+          <ConnectorPoint PointX="41.245262314230679" PointY="6.677227046543357" />
+          <ConnectorPoint PointX="41.254737685769328" PointY="6.84362414721516" />
+          <ConnectorPoint PointX="41.288164813453065" PointY="7.4306382930639705" />
+          <ConnectorPoint PointX="41.297640184991714" PointY="7.5970353937357737" />
+          <ConnectorPoint PointX="41.311689855174315" PointY="7.8437618016918753" />
+          <ConnectorPoint PointX="41.321165226712964" PointY="8.01015890236368" />
+          <ConnectorPoint PointX="41.411249529210494" PointY="9.5921302995262234" />
+          <ConnectorPoint PointX="41.420724900749143" PointY="9.7585274001980284" />
+          <ConnectorPoint PointX="41.432762314230679" PointY="9.9699165467602082" />
+          <ConnectorPoint PointX="41.442237685769328" PointY="10.136313647432013" />
+          <ConnectorPoint PointX="41.442630329714987" PointY="10.14320887195044" />
+          <ConnectorPoint PointX="41.452105701253636" PointY="10.309605972622245" />
+          <ConnectorPoint PointX="41.493007482221955" PointY="11.027882584539931" />
+          <ConnectorPoint PointX="41.332541710465222" PointY="11.005605485486456" />
+          <ConnectorPoint PointX="41.086293058765548" PointY="10.971419343821216" />
+          <ConnectorPoint PointX="41.014644433106312" PointY="10.961472527666082" />
+          <ConnectorPoint PointX="40.850025028432157" PointY="10.961472527666082" />
+          <ConnectorPoint PointX="39.196632304330137" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="39.123714700398082" PointY="10.699905320314215" />
+          <ConnectorPoint PointX="38.6613777051282" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="38.652626950425834" PointY="10.699905320314217" />
+          <ConnectorPoint PointX="36.462404043056971" PointY="10.402893051775591" />
+          <ConnectorPoint PointX="36.297046650639395" PointY="10.402893051775591" />
+          <ConnectorPoint PointX="35.762503352395115" PointY="10.309889805337747" />
+          <ConnectorPoint PointX="35.559445418868464" PointY="10.309889805337747" />
+          <ConnectorPoint PointX="34.093099313948883" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="5.8038959154224594" />
+          <ConnectorPoint PointX="41.224387432976854" PointY="5.8038959154224594" />
+          <ConnectorPoint PointX="41.246390683505545" PointY="6.311438982451862" />
+          <ConnectorPoint PointX="41.253609316494455" PointY="6.4779492497495559" />
+          <ConnectorPoint PointX="41.4288347625592" PointY="10.519827525931122" />
+          <ConnectorPoint PointX="41.441109316494455" PointY="10.802961363024748" />
+          <ConnectorPoint PointX="41.448307945398568" PointY="10.969010201474159" />
+          <ConnectorPoint PointX="41.333333333333336" PointY="10.969010201474157" />
+          <ConnectorPoint PointX="40.854166666666664" PointY="10.969010201474159" />
+          <ConnectorPoint PointX="40.792497314387965" PointY="10.969010201474159" />
+          <ConnectorPoint PointX="39.196632304330137" PointY="10.743544145711969" />
+          <ConnectorPoint PointX="39.123714700398082" PointY="10.743544145711967" />
+          <ConnectorPoint PointX="38.809093292755534" PointY="10.743544145711969" />
+          <ConnectorPoint PointX="38.721770048486427" PointY="10.743544145711969" />
+          <ConnectorPoint PointX="36.546120716196342" PointY="10.41350982683095" />
+          <ConnectorPoint PointX="36.381086478299224" PointY="10.41350982683095" />
+          <ConnectorPoint PointX="35.724723191590812" PointY="10.320963182326587" />
+          <ConnectorPoint PointX="35.559525038563677" PointY="10.320963182326587" />
+          <ConnectorPoint PointX="34.093099313948883" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="10.125" />
+          <ConnectorPoint PointX="35.642124115077245" PointY="5.75" />
+          <ConnectorPoint PointX="41.214638724538396" PointY="5.75" />
+          <ConnectorPoint PointX="41.246306024319793" PointY="6.4636884249570477" />
+          <ConnectorPoint PointX="41.253693975680207" PointY="6.630191265630935" />
+          <ConnectorPoint PointX="41.427586069805628" PointY="10.549211062884899" />
+          <ConnectorPoint PointX="41.441193975680207" PointY="10.855893507477243" />
+          <ConnectorPoint PointX="41.446154051778329" PointY="10.96767913247762" />
+          <ConnectorPoint PointX="41.258654051778329" PointY="10.96767913247762" />
+          <ConnectorPoint PointX="41.2399888210091" PointY="10.956300473685154" />
+          <ConnectorPoint PointX="40.991345948221671" PointY="10.804723327621128" />
+          <ConnectorPoint PointX="40.9864095051737" PointY="10.801713983574661" />
+          <ConnectorPoint PointX="40.7989095051737" PointY="10.801713983574661" />
+          <ConnectorPoint PointX="39.081070346656254" PointY="9.9280104746032549" />
+          <ConnectorPoint PointX="38.924802860645926" PointY="9.9280104746032549" />
+          <ConnectorPoint PointX="38.819796382636738" PointY="9.8774584971347466" />
+          <ConnectorPoint PointX="38.669625694286339" PointY="9.805163669255121" />
+          <ConnectorPoint PointX="36.049457144733175" PointY="8.54376814402745" />
+          <ConnectorPoint PointX="35.950542855266832" PointY="8.54376814402745" />
+          <ConnectorPoint PointX="35.799457144733175" PointY="8.4350474954290178" />
+          <ConnectorPoint PointX="35.717115212433917" PointY="8.4350474954290178" />
+          <ConnectorPoint PointX="35.717115212433917" PointY="8.435047495429016" />
+          <ConnectorPoint PointX="35.567133017720579" PointY="8.3623624278652589" />
+          <ConnectorPoint PointX="34.058188080295011" PointY="7.6310905263145745" />
+          <ConnectorPoint PointX="33.908205885581673" PointY="7.5584054587508174" />
+          <ConnectorPoint PointX="32.871710606547744" PointY="7.0560943042161686" />
+          <ConnectorPoint PointX="32.721728411834405" PointY="6.9834092366524114" />
+          <ConnectorPoint PointX="32.677733305516462" PointY="6.9620881239609611" />
+          <ConnectorPoint PointX="32.479166666666671" PointY="6.96208812396096" />
+          <ConnectorPoint PointX="32.261055806915195" PointY="6.9620881239609611" />
+          <ConnectorPoint PointX="32.2010904948263" PointY="6.9620881239609611" />
+          <ConnectorPoint PointX="32.1385904948263" PointY="6.9341767878492062" />
+          <ConnectorPoint PointX="31.923909505173693" PointY="6.83830425570523" />
+          <ConnectorPoint PointX="30.291666666666668" PointY="6.109375" />
+          <ConnectorPoint PointX="32.229166666666664" PointY="6.109375" />
+          <ConnectorPoint PointX="32.395833333333336" PointY="7.2809961626838229" />
+          <ConnectorPoint PointX="32.395833333333336" PointY="6.25" />
+          <ConnectorPoint PointX="33.668593642007927" PointY="6.2499999999999991" />
+          <ConnectorPoint PointX="33.8352603086746" PointY="6.25" />
+          <ConnectorPoint PointX="33.848473374701143" PointY="6.2499999999999991" />
+          <ConnectorPoint PointX="34.015140041367815" PointY="6.25" />
+          <ConnectorPoint PointX="35.558790781743909" PointY="6.2499999999999991" />
+          <ConnectorPoint PointX="35.72545744841058" PointY="6.25" />
+          <ConnectorPoint PointX="36.104744704743574" PointY="6.2499999999999991" />
+          <ConnectorPoint PointX="36.271411371410245" PointY="6.25" />
+          <ConnectorPoint PointX="40.729166666666664" PointY="6.2499999999999982" />
+          <ConnectorPoint PointX="41.333333333333336" PointY="6.25" />
+          <ConnectorPoint PointX="41.5" PointY="6.25" />
+          <ConnectorPoint PointX="41.326932160125033" PointY="6.3522473083198667" />
+          <ConnectorPoint PointX="41.2572452873161" PointY="6.3522473083198667" />
+          <ConnectorPoint PointX="41.1947452873161" PointY="6.3931169588620556" />
+          <ConnectorPoint PointX="40.9302547126839" PointY="6.5660711565727885" />
+          <ConnectorPoint PointX="40.926908801604405" PointY="6.5682590960378171" />
+          <ConnectorPoint PointX="40.735567839874967" PointY="6.5682590960378171" />
+          <ConnectorPoint PointX="39.264432160125033" PointY="7.2067637672812692" />
+          <ConnectorPoint PointX="39.201932160125033" PointY="7.2067637672812692" />
+          <ConnectorPoint PointX="38.968253768981988" PointY="7.3132813410949442" />
+          <ConnectorPoint PointX="38.66888389556842" PointY="7.44974304999725" />
+          <ConnectorPoint PointX="37.962993643126808" PointY="7.7715088611234311" />
+          <ConnectorPoint PointX="37.811339357340572" PointY="7.840637403567511" />
+          <ConnectorPoint PointX="36.2319665378886" PointY="8.5605625967031731" />
+          <ConnectorPoint PointX="36.080312252102367" PointY="8.6296911391472531" />
+          <ConnectorPoint PointX="36.020833333333336" PointY="8.6568034026704073" />
+          <ConnectorPoint PointX="36.020833333333336" PointY="8.6568034026704073" />
+          <ConnectorPoint PointX="35.854166666666664" PointY="8.6568034026704073" />
+          <ConnectorPoint PointX="35.719056275202277" PointY="8.6568034026704073" />
+          <ConnectorPoint PointX="35.886405589689225" PointY="8.8724215269320386" />
+          <ConnectorPoint PointX="36.051094410310775" PointY="9.0846117871559553" />
+          <ConnectorPoint PointX="36.092662559364108" PointY="9.13816949879276" />
+          <ConnectorPoint PointX="36.092662559364108" PointY="9.5441390892565359" />
+          <ConnectorPoint PointX="38.711531099908164" PointY="15.577731763522463" />
+          <ConnectorPoint PointX="38.777890977014913" PointY="15.730617814188166" />
+          <ConnectorPoint PointX="38.859246687535496" PointY="15.918052659201321" />
+          <ConnectorPoint PointX="38.925606564642244" PointY="16.070938709867022" />
+          <ConnectorPoint PointX="39.007201428511372" PointY="16.258924538585347" />
+          <ConnectorPoint PointX="39.073561305618121" PointY="16.411810589251047" />
+          <ConnectorPoint PointX="39.091825800597121" PointY="16.453890029818009" />
+          <ConnectorPoint PointX="39.091825800597121" PointY="16.655966773793651" />
+          <ConnectorPoint PointX="39.239958129039117" PointY="16.910062010930904" />
+          <ConnectorPoint PointX="39.239958129039117" PointY="17.00379879093499" />
+          <ConnectorPoint PointX="39.361095461762837" PointY="17.156661447231546" />
+          <ConnectorPoint PointX="39.361095461762837" PointY="17.282617178234567" />
+          <ConnectorPoint PointX="39.388188723211741" PointY="17.319718729516925" />
+          <ConnectorPoint PointX="39.486478911059748" PointY="17.454317454438748" />
+          <ConnectorPoint PointX="39.525251602260056" PointY="17.507412833658272" />
+          <ConnectorPoint PointX="39.525251602260056" PointY="17.658678165724027" />
+          <ConnectorPoint PointX="39.537367370202027" PointY="17.684739463718529" />
+          <ConnectorPoint PointX="39.701385836615906" PointY="18.03754699109011" />
+          <ConnectorPoint PointX="39.704859305712588" PointY="18.045018503720343" />
+          <ConnectorPoint PointX="39.937036007111374" PointY="18.544435976184076" />
+          <ConnectorPoint PointX="39.944116831119238" PointY="18.559666992938393" />
+          <ConnectorPoint PointX="39.944116831119238" PointY="18.624541045221871" />
+          <ConnectorPoint PointX="40.058965448977943" PointY="18.777403701518427" />
+          <ConnectorPoint PointX="40.058965448977943" PointY="18.888362993446624" />
+          <ConnectorPoint PointX="40.109096696417915" PointY="18.987441199427472" />
+          <ConnectorPoint PointX="40.18434248336326" PointY="19.136155184394433" />
+          <ConnectorPoint PointX="40.212377106527327" PointY="19.191562147322522" />
+          <ConnectorPoint PointX="40.287622893472673" PointY="19.340276132289482" />
+          <ConnectorPoint PointX="40.462376606527329" PointY="19.685655217433556" />
+          <ConnectorPoint PointX="40.537622393472674" PointY="19.834369202400516" />
+          <ConnectorPoint PointX="40.624876106527331" PointY="20.0068153671399" />
+          <ConnectorPoint PointX="40.700121893472677" PointY="20.155529352106861" />
+          <ConnectorPoint PointX="40.83234909691194" PointY="20.416860054366275" />
+          <ConnectorPoint PointX="40.907594883857286" PointY="20.565574039333235" />
+          <ConnectorPoint PointX="40.931758669027325" PointY="20.613330770047362" />
+          <ConnectorPoint PointX="41.00700445597267" PointY="20.762044755014323" />
+          <ConnectorPoint PointX="41.0282784416235" PointY="20.80409015464" />
+          <ConnectorPoint PointX="41.065492042266463" PointY="19.864831138235832" />
+          <ConnectorPoint PointX="41.0720902269643" PointY="19.698295130908672" />
+          <ConnectorPoint PointX="41.121700907651082" PointY="18.446137899683482" />
+          <ConnectorPoint PointX="41.128299092348918" PointY="18.279601892356322" />
+          <ConnectorPoint PointX="41.165535676881852" PointY="17.339762770143626" />
+          <ConnectorPoint PointX="41.172133861579688" PointY="17.173226762816466" />
+          <ConnectorPoint PointX="41.196788176881853" PointY="16.550959969474025" />
+          <ConnectorPoint PointX="41.203386361579689" PointY="16.384423962146865" />
+          <ConnectorPoint PointX="41.368700907651082" PointY="12.211939299078084" />
+          <ConnectorPoint PointX="41.375299092348918" PointY="12.045403291750928" />
+          <ConnectorPoint PointX="41.434200907651082" PointY="10.558740884747339" />
+          <ConnectorPoint PointX="41.440799092348918" PointY="10.392204877420182" />
+          <ConnectorPoint PointX="41.5" PointY="8.8979934780966428" />
+        </AssociationConnector>
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticuloDetalle_ARtblInvitacionArticulo" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_tblTarifaImpuesto" />
+        <EntityTypeShape EntityType="SAACGModel.GRvwListadoRol" Width="1.5" PointX="46.75" PointY="29" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraDetalle_ARtblInvitacionCompraDetalle" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwComboListadoMIR" Width="1.5" PointX="69.5" PointY="1.5" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.GRvwListadoUsuario" Width="1.5" PointX="46.75" PointY="27" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblPermisoFicha" Width="1.5" PointX="48.625" PointY="27" FillColor="224, 224, 224" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblUsarioPermiso" Width="1.5" PointX="50.375" PointY="27" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblPermisoFicha_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsarioPermiso_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblPermisoFicha_GRtblMenuPrincipal" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsarioPermiso_GRtblPermisoFicha" />
+        <EntityTypeShape EntityType="SAACGModel.ArtblInvitacionCompraDetallePrecioProveedor" Width="1.5" PointX="44" PointY="14.875" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInvitacionCompraProveedor" Width="1.5" PointX="44" PointY="10.625" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ArtblInvitacionCompraProveedorCotizacion" Width="1.5" PointX="44" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoInvitacionCompra" Width="1.5" PointX="19.875" PointY="0.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraProveedor_ARtblInvitacionCompra" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraDetallePrecioProveedor_ARtblInvitacionCompraDetalle" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraDetallePrecioProveedor_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraDetallePrecioProveedor_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraProveedor_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraProveedor_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraProveedorCotizacion_ARtblInvitacionCompraProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraProveedorCotizacion_GRtblArchivo" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraProveedorCotizacion_GRtblControlMaestro" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoMIR" Width="1.5" PointX="64.75" PointY="1.5" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblOrdenCompraInvitacionDet" Width="1.5" PointX="45.875" PointY="6.25" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblOrdenCompraInvitacionDet_ARtblInvitacionCompraDetalle" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblOrdenCompraInvitacionDet_tblOrdenCompraDet" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblCortesia" Width="1.5" PointX="47.75" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblCortesiaDetalle" Width="1.5" PointX="47.75" PointY="11.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_tblOrdenCompra" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_tblProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_ARtblCortesia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_tblCuentaPresupuestalEgr" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoReciboCortesia" Width="1.5" PointX="21.75" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblTransferencia" Width="1.5" PointX="49.625" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblTransferenciaMovto" Width="1.5" PointX="49.625" PointY="10.625" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoTransferencias" Width="1.5" PointX="23.625" PointY="0.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_ARtblAlmacenProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_ARtblAlmacenProducto1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferencia_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferencia_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_ARtblTransferencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioFisico" Width="2.75" PointX="21.125" PointY="6.375" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_RHtblEmpleado" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_ARtblInventarioFisico" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoInventarioFisico" Width="2.25" PointX="0.75" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoInventarioAjuste" Width="2.625" PointX="3.5" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblAlertaConfiguracion" Width="2.125" PointX="54.625" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_GRtblControlMaestro2" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_RHtblEmpleado" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblAlerta" Width="1.5" PointX="57.5" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlerta_GRtblControlMaestro" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblInventarioMovimientoAgrupador" Width="1.5" PointX="51.75" PointY="6.25" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimientoAgrupador_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimientoAgrupador_tblPoliza" />
+        <EntityTypeShape EntityType="SAACGModel.tblAdministracionPeriodo" Width="1.5" PointX="29.625" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestal_GRtblControlMaestro1" />
+        <EntityTypeShape EntityType="SAACGModel.MItblMatrizConfiguracionPresupuestalDetalle" Width="3" PointX="72" PointY="11" FillColor="255, 192, 192" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalDetalle_GRtblControlMaestro1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalDetalle_MItblMatrizConfiguracionPresupuestal" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalDetalle_MItblMatrizIndicadorResultadoIndicador" />
+        <EntityTypeShape EntityType="SAACGModel.ARvwListadoOrdenCompraRecibo" Width="1.5" PointX="17.875" PointY="0.75" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoMatrizPresupuestoVigente" Width="1.5" PointX="3.375" PointY="11.75" />
+        <EntityTypeShape EntityType="SAACGModel.MIvwListadoMatrizPresupuestoDevengado" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="SAACGModel.tblPolizaRef" Width="1.5" PointX="27.75" PointY="24.75" />
+        <AssociationConnector Association="SAACGModel.FK_tblPolizaRef_tblPoliza" />
+        <EntityTypeShape EntityType="SAACGModel.CGvwClasificadorObjetoGasto" Width="1.5" PointX="25.5" PointY="0.75" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_TipoCompraId" />
+        <AssociationConnector Association="SAACGModel.FK_ConfiguracionMontoId" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblControlMaestroConfiguracionArea" Width="3.375" PointX="32.375" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblControlMaestroConfiguracionAreaAlmacen" Width="3.375" PointX="32.375" PointY="14.375" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblControlMaestroConfiguracionAreaProyecto" Width="3.375" PointX="32.375" PointY="10.375" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblRequisicionMaterial" Width="2.125" PointX="53.75" PointY="6.25" FillColor="192, 255, 192" />
+        <EntityTypeShape EntityType="SAACGModel.ARtblRequisicionMaterialDetalle" Width="2.125" PointX="53.75" PointY="11.25" FillColor="192, 255, 192" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionArea_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaAlmacen_ARtblControlMaestroConfiguracionArea" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaProyecto_ARtblControlMaestroConfiguracionArea" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaAlmacen_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaProyecto_tblProyecto_Dependencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_ARtblRequisicionMaterialDetalle" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_tblDependencia1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_tblProyecto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_ARtblRequisicionMaterial" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_GRtblControlMaestro" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblAlmacen" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblDependencia" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblProducto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblProyecto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblTipoGasto" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_tblUnidadDeMedida" />
+        <EntityTypeShape EntityType="SAACGModel.tblEstado" Width="1.5" PointX="31.5" PointY="23.375" />
+        <EntityTypeShape EntityType="SAACGModel.tblMunicipio" Width="1.5" PointX="31.5" PointY="25.875" />
+        <EntityTypeShape EntityType="SAACGModel.tblPais" Width="1.5" PointX="31.5" PointY="21.125" />
+        <EntityTypeShape EntityType="SAACGModel.tblTipoProveedor" Width="1.5" PointX="33.375" PointY="21.125" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblEstado" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblMunicipio" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblPais" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblTipoComprobanteFiscal" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblTipoOperacion" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblTipoProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_tblAlmacen_tblEstado" />
+        <AssociationConnector Association="SAACGModel.FK_tblAlmacen_tblMunicipio" />
+        <AssociationConnector Association="SAACGModel.FK_tblMunicipio_tblEstado" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblEstado" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblMunicipio" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblPais" />
+        <AssociationConnector Association="SAACGModel.FK_tblProveedor_tblTipoProveedor" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_tblProveedor" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblConfiguracionEnte" Width="1.875" PointX="59.375" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblConfiguracionEnte_Estatus" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblConfiguracionEnte_TipoConfiguracionFecha" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_Empleado" />
+        <EntityTypeShape EntityType="SAACGModel.GRtblUsuario" Width="2" PointX="38.25" PointY="21" FillColor="224, 224, 224" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblAlmacenProducto_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblAlmacenProducto_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConceptoAjusteInventario_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConceptoAjusteInventario_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionArea_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionArea_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaAlmacen_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaAlmacen_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaProyecto_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionAreaProyecto_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionMontoCompra_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblControlMaestroConfiguracionMontoCompra_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesia_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblCortesiaDetalle_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjuste_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioAjusteDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisico_GRtblUsuario2" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioFisicoDetalle_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimiento_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInventarioMovimientoAgrupador_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblUsuario2" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblUsuario3" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionArticulo_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompra_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompra_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARInvitacionCompraDetalle_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraProveedor_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblInvitacionCompraProveedor_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraProveedorCotizacion_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ArtblInvitacionCompraProveedorCotizacion_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblProveedorProspecto_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterial_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_GRtblUsuario2" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblRequisicionMaterialDetalle_GRtblUsuario3" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferencia_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferencia_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_ARtblTransferenciaMovto_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlerta_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblAlertaConfiguracion_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblConfiguracionEnte_CreadoPor" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblConfiguracionEnte_ModificadoPor" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblPermisoFicha_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblPermisoFicha_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRol_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRol_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRolMenu_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblRolMenu_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsarioPermiso_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsarioPermiso_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsarioPermiso_GRtblUsuario2" />
+        <AssociationConnector Association="SAACGModel.FK_GRtblUsuario_RHtblEmpleado" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroControlPeriodo_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroControlPeriodo_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimension_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimension_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimensionNivel_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroDimensionNivel_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicion_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicion_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicionNivel_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroFrecuenciaMedicionNivel_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicador_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicador_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicadorNivel_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroTipoIndicadorNivel_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedida_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedida_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaDimension_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaDimension_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaFormulaVariable_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblControlMaestroUnidadMedidaFormulaVariable_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestal_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestal_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalDetalle_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalDetalle_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalSeguimientoVariable_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizConfiguracionPresupuestalSeguimientoVariable_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultado_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicador_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorFormulaVariable_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorFormulaVariable_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorMeta_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblMatrizIndicadorResultadoIndicadorMeta_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrollo_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrollo_GRtblUsuario1" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrolloEstructura_GRtblUsuario" />
+        <AssociationConnector Association="SAACGModel.FK_MItblPlanDesarrolloEstructura_GRtblUsuario1" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
